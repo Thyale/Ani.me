@@ -1,0 +1,311 @@
+@media all /*pc e telas maiores*/ {
+  /*gerais*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  html {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /*header*/
+
+  header{
+    max-width: 1300px;
+    margin: auto;
+  }
+
+  /*header - barra superior*/
+
+  .barrainicial{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 1em;
+    align-items: center;
+  }
+
+  .barrainicial ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .barrainicial h1{
+    color: #1189c0;
+  }
+
+  .barrainicial a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+  }
+
+  .barrainicial input{
+    border-radius: 20px;
+    width: 250px;
+    padding: 1em;
+    background-color: #151B26;
+    border: 2px solid #151B26;
+    color: white;
+  }
+
+  #icones{
+    color: white;
+    display: none;
+    cursor: pointer;
+  }
+
+  /*header - barra alfabética*/
+
+  .barraalfabetica{
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    gap: 4em;
+    overflow-x: auto;
+  }
+
+  .barraalfabetica::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+  }
+
+  .barraalfabetica::-webkit-scrollbar-thumb {
+    background-color:#1189c0;
+    border-radius: 10px;
+  }
+
+  .barraalfabetica::-webkit-scrollbar-track {
+    background-color: #151B26;
+  }
+
+  .barraalfabetica p{
+    font-size: 0.9em;
+    border: 2px solid #151B26;
+    padding: 0.5em 2em;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    width: 100px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .barraalfabetica p:hover{
+    transform: translate(3px, 3px);
+    transition: transform 0.4s;
+  }
+
+  .ptodos{
+    background-color: #151B26;
+  }
+
+  /*main*/
+
+  main{
+    padding: 2em;
+    margin-top: 1em;
+    max-width: 1300px;
+    margin: auto;
+  }
+
+  /*main - primeira parte*/
+
+  .ONEPUNCHMAN{
+    color: white;
+  }
+
+  .ONEPUNCHMAN h1{
+    margin-bottom: 10px;
+  }
+
+  .imgpunchman{
+    margin-top: 3em;
+    background-image: url(./img/onepunchman.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 4em;
+  }
+
+  .imgpunchman div{
+    width: 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .imgpunchman div h2{
+    margin-bottom: 10px;
+  }
+
+  /*main - atualizações*/
+
+  .atualizacoes{
+    color: white;
+    margin-top: 4em;
+  }
+
+  .atualizacoes h1{
+    margin-bottom: 2em;
+  }
+
+  .episodios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 3em;
+  }
+
+  .episodios div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .episodios div img{
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  .atualizacoes input{
+    background-color: #151B26;
+    border: 1px solid #151B26;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    padding: 1em;
+    margin: auto;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .atualizacoes input:hover{
+    transform: translate(4px, 4px);
+    transition: transform 0.8s;
+  }
+
+  /*main - Animes recentes*/
+
+  .animesrecentes{
+    color: white;
+    margin-top: 4em;
+  }
+
+  .animesrecentes h1{
+    margin-bottom: 2em;
+  }
+
+  .episodiosrecentes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 3em;
+  }
+
+  .episodiosrecentes div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .episodiosrecentes div img{
+    width: 150px;
+    border-radius: 10px;
+  }
+
+
+  /*footer*/
+
+  footer{
+    padding: 2em;
+    text-align: center;
+    color:rgb(73, 78, 78) ;
+  }
+}
+
+/* Estilos para tablets */
+@media (max-width: 1000px) {
+
+  /*header*/
+
+  /*header - barra superior*/
+
+  .barrainicial{
+    justify-content:space-between;
+    padding: 2em;
+  }
+
+  .barrainicial ul{
+    display: none;
+  }
+
+  .barrainicial h1{
+    color: #1189c0;
+    font-size: 2em;
+  }
+
+
+  .barrainicial input{
+    display: none;
+  }
+
+  #icones{
+    color: white;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+  }
+
+  /*main - primeira parte*/
+
+  .imgpunchman{
+    padding: 2em;
+  }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  /*header - barra alfabética*/
+
+  .barraalfabetica{
+    gap: 2em;
+  }
+
+  /*main - primeira parte*/
+
+  .imgpunchman{
+    padding: 2em;
+  }
+
+  .imgpunchman div{
+    padding: 0.5em;
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+}
