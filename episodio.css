@@ -1,0 +1,379 @@
+@media all /*pc e telas maiores*/ {
+  /*gerais*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  html {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /*header*/
+
+  header{
+    max-width: 1300px;
+    margin: auto;
+  }
+
+  /*header - barra superior*/
+
+  .barrainicial{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 1em;
+    align-items: center;
+  }
+
+  .barrainicial ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .barrainicial h1{
+    color: #1189c0;
+  }
+
+  .barrainicial a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+  }
+
+  .barrainicial input{
+    border-radius: 20px;
+    width: 250px;
+    padding: 1em;
+    background-color: #151B26;
+    border: 2px solid #151B26;
+    color: white;
+    outline:none;
+  }
+
+  #icones{
+    color: white;
+    display: none;
+    cursor: pointer;
+  }
+
+  /*main*/
+
+  main{
+    padding: 2em;
+    margin-top: 2em;
+    max-width: 1300px;
+    margin: auto;
+  }
+
+  /*main - episódio*/
+
+  .Ep1{
+    color: white;
+  }
+
+  .Ep1 h1{
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+
+  .videodiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  iframe{
+    width:70vw; 
+    max-width: 868px;
+    height:415px;
+  }
+
+  .maisvistos{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: #151B26;
+    margin-top: 10px;
+  }
+
+  .nomesdosanimes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  .nomesdosanimes p{
+    font-size: 0.7em;
+    color: grey;
+  }
+
+  .nomesdosanimes h2{
+    font-size: 1em;
+  }
+
+  .maisvistos img{
+    width: 70px;
+    height: 70px;
+    margin-right: 1em;
+    border-radius: 10px;
+  }
+
+  /*main - Animes recentes*/
+
+  .relacionados{
+    color: white;
+    margin-top: 4em;
+  }
+
+  .relacionados h1{
+    margin-bottom: 2em;
+  }
+
+  .episodiosrecentes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 3em;
+  }
+
+  .episodiosrecentes div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .episodiosrecentes div img{
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  /*main - detalhes*/
+
+  .detalhes{
+    margin-top: 5em;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .detalhes img{
+    width: 200px;
+    border-radius: 20px;
+  }
+
+  .detalhes strong{
+    color: grey;
+    margin-left: 10px;
+  }
+
+  .detalhesdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .detalhes div p{
+    margin-bottom: 20px;
+  }
+
+  .sinopse{
+    text-align: justify;
+  }
+
+  .detalhesdiv h2{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+
+  /*main - comentários*/
+
+  .comentarios{
+    color: white;
+    margin-top: 4em;
+  }
+
+  .comentarios h1{
+    margin-bottom: 2em;
+  }
+
+  .pessoasquecomentaram{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .divcomentario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .divcomentario img{
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  .divcomentario p{
+    color: rgb(146, 146, 146);
+    margin-top: 10px;
+    font-size: 0.8em;
+  }
+
+  .divcomentario h2{
+    font-size: 1.3em;
+  }
+
+  .pessoasquecomentaram input{
+    background-color: #151B26;
+    border: 1px solid #151B26;
+    color: white;
+    width: 150px;
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1em;
+    display: none;
+  }
+
+  .pessoasquecomentaram input:hover{
+    transform: translate(4px, 4px);
+    transition: transform 0.8s;
+  }
+
+  /*footer*/
+
+  footer{
+    padding: 2em;
+    text-align: center;
+    color:rgb(73, 78, 78) ;
+  }
+}
+
+/* Estilos para tablets */
+@media (max-width: 1000px) {
+
+  /*header*/
+
+  /*header - barra superior*/
+
+  .barrainicial{
+    justify-content:space-between;
+    padding: 2em;
+  }
+
+  .barrainicial ul{
+    display: none;
+  }
+
+  .barrainicial h1{
+    color: #1189c0;
+    font-size: 2em;
+  }
+
+  .barrainicial input{
+    display: none;
+  }
+
+  #icones{
+    color: white;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+  }
+
+  /*main - episódio*/
+
+  .barravistolateral{
+    display: none;
+  }
+
+    iframe{
+    width:90vw; 
+  }
+
+  /*main - detalhes*/
+
+  .imgdetalhes{
+    display: none;
+  }
+
+  .detalhesdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3em;
+  }
+
+  .detalhesdiv div{
+    width: 40%;
+  }
+
+  /*main - comentários*/
+
+  .comentarios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pessoasquecomentaram input{
+    display: block;
+  }
+
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+
+  /*main - detalhes*/
+
+  .imgdetalhes{
+    display: none;
+  }
+
+  .detalhesdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3em;
+  }
+
+  .detalhesdiv div{
+    width: 100%;
+  }
+
+  /*main - comentários*/
+
+  .comentarios{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pessoasquecomentaram input{
+    width: 100%;
+  }
+}
